@@ -1,0 +1,13 @@
+<nav class="timeline-nav">
+  <ul class="timeline">
+    {{#get "posts" limit="all" order="published_at desc"}}
+      {{#foreach posts}}
+        <li>
+          <a href="{{url}}" class="timeline-bubble" title="{{title}}">
+            {{date published_at format="DD"}}
+          </a>
+        </li>
+      {{/foreach}}
+    {{/get}}
+  </ul>
+</nav>

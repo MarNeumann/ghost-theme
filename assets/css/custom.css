@@ -1,0 +1,35 @@
+.timeline-nav {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  overflow-x: auto;
+}
+
+.timeline {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ddd;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.timeline-bubble:hover {
+  background: #333;
+  color: #fff;
+}
