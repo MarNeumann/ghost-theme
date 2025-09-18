@@ -915,7 +915,8 @@ Search                         LOGO                    Login Subscribe
 .gh-card-image {
     position: relative;
     flex-shrink: 0;
-    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: clip;
 }
 
 .gh-card-image img {
@@ -1718,7 +1719,7 @@ Search                         LOGO                    Login Subscribe
 .gh-container.is-list .gh-card-image {
     flex-shrink: 0;
     width: 220px;
-    aspect-ratio: 1.618033;
+    aspect-ratio: 1;
 }
 
 @container list-feed (width < 600px) {
@@ -2064,6 +2065,8 @@ Search                         LOGO                    Login Subscribe
 .gh-article-image {
     grid-column: wide;
     margin-top: 40px;
+    border-radius: 12px;
+    overflow: clip;
 }
 
 .gh-article-image img {

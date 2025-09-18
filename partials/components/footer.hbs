@@ -2,7 +2,8 @@
     <div class="gh-footer-inner gh-inner">
 
         <div class="gh-footer-bar">
-            <span class="gh-footer-logo is-title">
+                     
+            {{!-- <span class="gh-footer-logo is-title">
                 {{#if @site.logo}}
                     <img src="{{@site.logo}}" alt="{{@site.title}}">
                 {{else}}
@@ -14,9 +15,9 @@
             </nav>
             <div class="gh-footer-copyright">
                 Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
-            </div>
+            </div> --}}
         </div>
-
+{{!-- 
         {{#if @site.members_enabled}}
             {{#unless @member}}
                 <section class="gh-footer-signup">
@@ -29,7 +30,7 @@
                     {{> "email-subscription" email_field_id="footer-email"}}
                 </section>
             {{/unless}}
-        {{/if}}
+        {{/if}} --}}
 
     </div>
 </footer>
