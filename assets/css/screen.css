@@ -389,6 +389,13 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
 
 .gh-main {
     flex-grow: 1;
+    margin-top: 64px;
+}
+
+@media (min-width: 768px) {
+    .gh-main {
+        margin-top: 100px;
+    }
 }
 
 .gh-canvas,
@@ -428,6 +435,11 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
     font-weight: 550;
     background-color: var(--background-color);
     color: var(--color-darker-gray);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+
 }
 
 .gh-navigation :is(.gh-navigation-logo, a:not(.gh-button), .gh-icon-button) {
@@ -994,7 +1006,13 @@ Search                         LOGO                    Login Subscribe
 
 .gh-header {
     position: relative;
-    margin-top: 40px;
+    margin-top: 64px !important;
+}
+
+@media (min-width: 768px) {
+    .gh-header {
+        margin-top: 100px !important;
+    }
 }
 
 .gh-header-inner {
